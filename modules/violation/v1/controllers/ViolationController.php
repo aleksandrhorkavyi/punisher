@@ -8,4 +8,9 @@ use app\modules\violation\v1\resources\ViolationResource;
 class ViolationController extends ActiveController
 {
     public $modelClass = ViolationResource::class;
+
+    public function actionTrack()
+    {
+        return 'tracked';
+    }
 }

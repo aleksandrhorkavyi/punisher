@@ -5,6 +5,9 @@ return [
     [
         'class' => \yii\rest\UrlRule::class,
         'controller' => ['v1/violations' => 'violation.v1/violation'],
+        'extraPatterns' => [
+            'GET track' => 'track'
+        ]
     ],
     ['class' => \yii\rest\UrlRule::class, 'controller' => ['v1/vehicles' => 'vehicle.v1/vehicle']],
     [
